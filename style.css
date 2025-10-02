@@ -1,0 +1,417 @@
+/* Reset básico: elimino márgenes y paddings
+   además ajusto el box-sizing para controlar mejor las medidas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Clases rápidas de flexbox para centrar y organizar */
+.displayFlex {
+    display: flex;
+}
+
+.justifiCenter {
+    justify-content: center;
+}
+
+.aligCenter {
+    align-items: center;
+}
+
+.flexColum {
+    flex-direction: column;
+}
+
+/* Fondo principal de la página */
+body {
+    background-image: url("fondo.jpg");
+}
+
+/* Título principal y subtítulos con estilo cursivo */
+.titulo {
+    width: 420px;
+    margin: 1%;
+    font-family: cursive;
+}
+
+.letra {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.subtitulo {
+    font-family: cursive;
+    font-size: 18px;
+}
+
+/* Caja de ejemplo con una imagen de prueba */
+.ejemplo {
+    background-color: white;
+    border-radius: 8px;
+}
+
+.img {
+    background-image: url('prueba3.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 420px;
+}
+
+/* Subtítulos, botones submit y botón principal */
+h3 {
+    font-size: 16px;
+    font-family: cursive;
+    margin: 5px;
+}
+
+.submit {
+    font-size: 24px;
+}
+
+.boton {
+    font-size: 21px;
+    font-family: cursive;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 0;
+    padding: 2px;
+    margin: 2px;
+    background-color: orange;
+    color: white;
+}
+
+/* Caja donde el usuario sube su foto */
+.Foto {
+    background-color: white;
+    width: 420px;
+    margin: 1%;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+/* Imagen de un perro animado como decoración */
+.perro {
+    background-image: url('perrogif.gif');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 550px;
+    top: 75px;
+}
+
+/* Fondo de estrellas con animación para dar ambiente */
+.stars {
+    position: absolute;
+    width: 100vh;
+    height: 50%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    animation: twinkle 5s infinite linear;
+    opacity: 0.4;
+}
+
+@keyframes twinkle {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100px);
+    }
+}
+
+/* Contenedor principal de la presentación */
+.container {
+    text-align: center;
+    z-index: 2;
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(circle at center, #1a1a2e, #0f0f1a);
+    overflow: hidden;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #fff;
+}
+
+/* Estilo de títulos grandes con sombras */
+h1 {
+    font-weight: bold;
+    font-family: cursive;
+    margin: 5px;
+    color: black;
+    text-shadow: 0 0 8px white;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: cursive;
+    margin-bottom: 5%;
+    color: white;
+    text-shadow: 0 0 8px orange;
+}
+
+/* Bola de cristal animada con humo dentro */
+.crystal-ball {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.6), rgba(128, 0, 128, 0.6));
+    box-shadow: 0 0 40px rgba(255, 0, 255, 0.8), 0 0 80px rgba(128, 0, 128, 0.6);
+    position: relative;
+    overflow: hidden;
+    animation: pulse 3s infinite;
+}
+
+.smoke {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.pinimg.com/originals/ba/f5/cd/baf5cd4ccf09e44e0fb5303da7927d84.gif') repeat;
+    background-position: center;
+    background-size: cover;
+    animation: smokeMove 8s infinite linear;
+    opacity: 0.4;
+}
+
+@keyframes smokeMove {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-200px);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Botón principal con degradado y efectos al pasar el mouse */
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #ff66ff, #6600cc);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.7);
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 1);
+}
+
+/* Clase para ocultar elementos y para desvanecer */
+.oculto {
+    display: none;
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+
+/* Animación de entrada blur-in-expand para dar dramatismo */
+.blur-in-expand {
+    animation: blur-in-expand 1s linear both
+}
+
+@keyframes blur-in-expand {
+    0% {
+        transform: scale(0);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+/* Estilo para el contenedor .ejemplo (usado como resultado) */
+.ejemplo {
+    gap: 24px;
+    flex-wrap: wrap;
+    /* mantiene la caja blanca */
+    padding: 8px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 920px;
+    box-shadow: 0 8px 30px rgba(2, 6, 23, 0.12);
+    color: #111;
+    box-sizing: border-box;
+}
+
+/* fila interna que agrupa persona + animal */
+.ejemplo .result-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 220px;
+}
+
+/* cajas de foto persona y animal */
+.ejemplo .person-box,
+.ejemplo .animal-box {
+    flex: 0 0 260px;
+    /* ancho base */
+    text-align: center;
+    min-width: 220px;
+}
+
+/* imagenes: foto del usuario y animal */
+.ejemplo img.person-photo,
+.ejemplo img.animal-photo {
+    width: 120px;
+    height: 160px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    border: 3px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 6px 18px rgba(2, 6, 23, 0.08);
+}
+
+/* etiquetas y textos dentro del resultado */
+.ejemplo .label {
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.ejemplo .result-name {
+    margin-top: 8px;
+    font-weight: 800;
+    color: #222;
+}
+
+
+/* cuando la imagen del animal usa tu animación blur-in-expand */
+.ejemplo img.animal-photo.blur-in-expand {
+    /* la animación ya viene de tu CSS, esto solo garantiza que se vea */
+    animation: blur-in-expand 1s linear both;
+}
+
+.reiniciar {
+    position: fixed;
+    bottom: 180px;
+    /* distancia desde arriba */
+    right: 640px;
+    /* distancia desde la derecha */
+    font-size: 10px;
+    background: linear-gradient(45deg, #ff66ff, #6600cc);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.7);
+    cursor: pointer;
+    z-index: 9999;
+    /* para que quede encima de todo */
+}
+
+.reiniciar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 1);
+}
+
+.img--has-photo {
+    background-image: none !important;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+}
+
+
+/* responsive: en pantallas pequeñas apila vertical */
+@media (max-width: 600px) {
+/* Estilo para el contenedor .ejemplo (usado como resultado) */
+.ejemplo {
+   
+    width: 100%;
+    max-width: 920px;
+ 
+}
+
+/* fila interna que agrupa persona + animal */
+.ejemplo .result-row {
+    width: 100%;
+    height: 195px;
+}
+
+.ejemplo .result-name {
+    font-size: 7px;
+    font-weight: 800;
+    color: #222;
+}
+
+    .perro {
+        background-image: url('perrogif.gif');
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        right: 170px;
+        top: 65px;
+    }
+
+    .reiniciar {
+        position: absolute;
+        top: 316px;
+        /* distancia desde arriba */
+        right: 250px;
+        /* distancia desde la derecha */
+        font-size: 9px;
+        height: 28px;
+
+    }
+
+    .img {
+
+        height: 110px;
+        width: 420px;
+    }
+
+    .img-media {
+        width: 120px !important;
+        height: 120px !important;
+    }
+    
+}
+
+/* override ligero por si el JS inserta estilos inline con max-width */
+.ejemplo img {
+    max-width: 220px !important;
+}
