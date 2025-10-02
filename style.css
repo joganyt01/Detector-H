@@ -79,7 +79,7 @@ h3 {
     border: 0;
     padding: 2px;
     margin: 2px;
-    background-color: orange;
+  
     color: white;
 }
 
@@ -408,6 +408,11 @@ h1 {
         width: 120px !important;
         height: 120px !important;
     }
+
+    .boton{
+        font-size: 15px;
+    }
+    
     
 }
 
