@@ -30,19 +30,24 @@ body {
 
 /* Título principal y subtítulos con estilo cursivo */
 .titulo {
-    
+
     font-family: cursive;
-     display: flex;
-  align-items: center;   /* centra verticalmente */
-  justify-content: center; /* centra el conjunto */
-  gap: 10px; /* espacio entre texto y perro */
-  flex-wrap: wrap; /* si en móvil no cabe, baja el perro abajo */
+    display: flex;
+    align-items: center;
+    /* centra verticalmente */
+    justify-content: center;
+    /* centra el conjunto */
+    gap: 10px;
+    /* espacio entre texto y perro */
+    flex-wrap: wrap;
+    /* si en móvil no cabe, baja el perro abajo */
 }
 
 .titulo h1 {
-  margin: 0;
-  font-size: 2rem; /* ajusta a tu diseño */
-  text-align: center;
+    margin: 0;
+    font-size: 2rem;
+    /* ajusta a tu diseño */
+    text-align: center;
 }
 
 .letra {
@@ -108,10 +113,10 @@ h3 {
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
-     border-radius: 8px;
+    border-radius: 8px;
     width: 100px;
     height: 100px;
-  
+
 }
 
 /* Fondo de estrellas con animación para dar ambiente */
@@ -365,17 +370,20 @@ h1 {
 
 /* responsive: en pantallas pequeñas apila vertical */
 @media (max-width: 768px) {
-   
-   
-    h3{
+
+
+    h3 {
         font-size: 12px;
     }
-    .botons{
-       font-size: 9px;
+
+    .botons {
+        font-size: 9px;
     }
-    .boton{
-   font-size: 9px !important;
+
+    .boton {
+        font-size: 9px !important;
     }
+
     /* Estilo para el contenedor .ejemplo (usado como resultado) */
     .ejemplo {
         gap: 24px;
@@ -388,7 +396,7 @@ h1 {
         box-shadow: 0 8px 30px rgba(2, 6, 23, 0.12);
         color: #111;
         box-sizing: border-box;
-        
+
     }
 
     /* fila interna que agrupa persona + animal */
@@ -402,16 +410,13 @@ h1 {
         height: 250px;
     }
 
-    /* cajas de foto persona y animal */
-    .ejemplo .person-box,
-    .ejemplo .animal-box {}
-
+   
     /* imagenes: foto del usuario y animal */
     .ejemplo img.person-photo,
     .ejemplo img.animal-photo {
         width: 100px;
         height: 150px;
-    
+
     }
 
     .ejemplo img.animal-photo {
@@ -454,27 +459,26 @@ h1 {
         width: 110px !important;
         height: 110px !important;
     }
+
     .titulo {
-  display: flex;
-  align-items: center;   /* centra verticalmente */
-  justify-content: center; /* centra el conjunto */
-  gap: 10px; /* espacio entre texto y perro */
-  flex-wrap: wrap; /* si en móvil no cabe, baja el perro abajo */
-}
-
-.titulo h1 {
-  margin: 0;
-  font-size: 24px; /* ajusta a tu diseño */
-  text-align: center;
-}
-
-
-    .reiniciar {
-
-        font-size: 9px;
-        height: 28px;
-
+        display: flex;
+        align-items: center;
+        /* centra verticalmente */
+        justify-content: center;
+        /* centra el conjunto */
+        gap: 10px;
+        /* espacio entre texto y perro */
+        flex-wrap: wrap;
+        /* si en móvil no cabe, baja el perro abajo */
     }
+
+    .titulo h1 {
+        margin: 0;
+        font-size: 24px;
+        /* ajusta a tu diseño */
+        text-align: center;
+    }
+
 
     .img {
 
