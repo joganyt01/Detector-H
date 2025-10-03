@@ -354,7 +354,7 @@ h1 {
 
 
 /* responsive: en pantallas pequeñas apila vertical */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 /* Estilo para el contenedor .ejemplo (usado como resultado) */
 .ejemplo {
    
@@ -383,7 +383,7 @@ h1 {
         position: absolute;
         width: 100px;
         height: 100px;
-        right: 170px;
+        right: 250px;
         top: 65px;
     }
 
@@ -391,7 +391,7 @@ h1 {
         position: absolute;
         top: 316px;
         /* distancia desde arriba */
-        right: 250px;
+        right: 325px;
         /* distancia desde la derecha */
         font-size: 9px;
         height: 28px;
