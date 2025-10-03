@@ -397,9 +397,9 @@ h1 {
 
     .reiniciar {
         position: absolute;
-        top: 285px;
+        top: 283px;
         /* distancia desde arriba */
-        right: 144px;
+        right: 138px;
         /* distancia desde la derecha */
         font-size: 9px;
         height: 28px;
