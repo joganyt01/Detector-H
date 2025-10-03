@@ -362,6 +362,10 @@ h1 {
     max-width: 920px;
  
 }
+.foto{
+    width: 100%;
+    max-width: 920px;
+}
 
 /* fila interna que agrupa persona + animal */
 .ejemplo .result-row {
@@ -388,14 +392,14 @@ h1 {
         width: 100px;
         height: 100px;
         right: 250px;
-        top: 65px;
+        top: 50px;
     }
 
     .reiniciar {
         position: absolute;
         top: 316px;
         /* distancia desde arriba */
-        right: 325px;
+        right: 147px;
         /* distancia desde la derecha */
         font-size: 9px;
         height: 28px;
